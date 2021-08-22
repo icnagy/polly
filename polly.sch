@@ -664,8 +664,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 2700 8700 2700
 Wire Wire Line
-	9000 2800 8700 2800
-Wire Wire Line
 	9000 2900 8500 2900
 $Comp
 L Connector_Generic:Conn_01x10 P3
@@ -1182,9 +1180,9 @@ Text Label 3900 2250 2    50   ~ 0
 CUTOFF
 Text Label 6100 4150 0    50   ~ 0
 LP_CUTOFF
-Text Label 8700 2700 2    50   ~ 0
+Text Label 8700 2600 2    50   ~ 0
 DAC_OUTPUT
-Text Label 8700 2800 2    50   ~ 0
+Text Label 8700 2700 2    50   ~ 0
 NOISE
 Text Label 8700 3000 2    50   ~ 0
 VOICE_OUT
@@ -1204,12 +1202,12 @@ Wire Wire Line
 $Comp
 L power:+5VA #PWR0104
 U 1 1 6128896C
-P 8700 2600
-F 0 "#PWR0104" H 8700 2450 50  0001 C CNN
-F 1 "+5VA" H 8750 2800 50  0000 C CNN
-F 2 "" H 8700 2600 50  0001 C CNN
-F 3 "" H 8700 2600 50  0001 C CNN
-	1    8700 2600
+P 8550 2800
+F 0 "#PWR0104" H 8550 2650 50  0001 C CNN
+F 1 "+5VA" H 8600 3000 50  0000 C CNN
+F 2 "" H 8550 2800 50  0001 C CNN
+F 3 "" H 8550 2800 50  0001 C CNN
+	1    8550 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1283,4 +1281,6 @@ PARAM_SEL_B
 Text Label 2100 5000 0    60   ~ 0
 PARAM_SEL_A
 NoConn ~ 9800 1500
+Wire Wire Line
+	8550 2800 9000 2800
 $EndSCHEMATC
